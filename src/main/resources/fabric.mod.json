@@ -1,0 +1,37 @@
+{
+	"schemaVersion": 1,
+	"id": "slcreator",
+	"version": "${version}",
+	"name": "Silent Creator",
+	"description": "A minecraft engine",
+	"authors": [
+		"SonicD5"
+	],
+	"contact": {
+		"homepage": "",
+		"sources": "https://github.com/FabricMC/fabric-example-mod"
+	},
+	"license": "MIT",
+	"icon": "assets/slcreator/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"net.sonicd5.slcreator.SilentCreator"
+		],
+		"fabric-datagen": [
+			"net.sonicd5.slcreator.SilentCreatorDataGenerator"
+		]
+	},
+	"mixins": [
+		"slcreator.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.16.3",
+		"minecraft": "~1.21.1",
+		"java": ">=21",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}
