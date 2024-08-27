@@ -8,18 +8,19 @@
 		"SonicD5"
 	],
 	"contact": {
+		"issues": "https://github.com/SonicD5/SLCreator/issues",
 		"homepage": "",
-		"sources": "https://github.com/SonicD5/slcreator"
+		"sources": "https://github.com/SonicD5/SLCreator"
 	},
 	"license": "MIT",
 	"icon": "assets/slcreator/icon.png",
-	"environment": "*",
+	"environment": "server",
 	"entrypoints": {
 		"main": [
-			"net.sonicd5.slcreator.SilentCreator"
+			"net.sonicd5.slcreator.SLCreator"
 		],
 		"fabric-datagen": [
-			"net.sonicd5.slcreator.SilentCreatorDataGenerator"
+			"net.sonicd5.slcreator.SLCreatorDataGeneration"
 		]
 	},
 	"mixins": [

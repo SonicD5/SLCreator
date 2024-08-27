@@ -4,7 +4,7 @@ import net.minecraft.item.Item;
 import net.minecraft.registry.Registries;
 import net.minecraft.registry.Registry;
 import net.minecraft.util.Identifier;
-import net.sonicd5.slcreator.SilentCreator;
+import net.sonicd5.slcreator.SLCreator;
 
 public class ModItems {
 
@@ -13,10 +13,10 @@ public class ModItems {
 
 
     protected static Item register(String path, Item item) {
-        return Registry.register(Registries.ITEM, Identifier.of(SilentCreator.MOD_ID, path), item);
+        return Registry.register(Registries.ITEM, Identifier.of(SLCreator.MOD_ID, path), item);
     }
 
     public static void initialize() {
-        SilentCreator.LOGGER.info("Registering Items");
+        SLCreator.LOGGER.info("Registering Items");
     }
 }

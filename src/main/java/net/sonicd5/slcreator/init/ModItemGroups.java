@@ -7,7 +7,7 @@ import net.minecraft.registry.Registries;
 import net.minecraft.registry.Registry;
 import net.minecraft.text.Text;
 import net.minecraft.util.Identifier;
-import net.sonicd5.slcreator.SilentCreator;
+import net.sonicd5.slcreator.SLCreator;
 
 public class ModItemGroups {
 
@@ -20,11 +20,11 @@ public class ModItemGroups {
                             }
                     ).build());
 
-    private static ItemGroup register(String path, ItemGroup itemGroup) {
+    protected static ItemGroup register(String path, ItemGroup itemGroup) {
         return Registry.register(Registries.ITEM_GROUP,
-                Identifier.of(SilentCreator.MOD_ID, path), itemGroup);
+                Identifier.of(SLCreator.MOD_ID, path), itemGroup);
     }
     public static void initialize() {
-        SilentCreator.LOGGER.info("Registering Item Groups");
+        SLCreator.LOGGER.info("Registering Item Groups");
     }
 }
